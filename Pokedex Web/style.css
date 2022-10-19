@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');   /*Importo la fuente que quiero usar*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background: #efefbb;
+    background: linear-gradient(to right, #d4d3dd, #efefbb);
+    font-family: 'Lato', sans-serif;
+    display: flex; /*Para que me lo muestre como flex y sea responsive*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*height: 100vh;*/
+    margin: 0;
+}
+
+h1 {
+    letter-spacing: 3px;
+}
+
+.poke-container {
+
+    display: flex;
+    flex-wrap: wrap; /*Si no cabe lo pasa a la siguiente fila*/
+    align-items: space-between;
+    justify-content: center;
+    margin: 0, auto;
+    max-width: 1200px; /*responsive asi jeje*/
+
+}
+
+.pokemon {
+
+    background-color: #eee; /*esto va a cambiar dependiendo del tipo asi que da un poco igual*/
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pokemon .img-container {
+    background-color: rgba(255, 255, 255, 0.6); /*a es canal alpha*/
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pokemon .img-container img{
+    max-width: 90%;
+    margin-top: 10px;
+}
+
+.pokemon .info {
+    margin-top: 20px;
+}
+
+.pokemon .info .number{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;  /*5 top bottom y 10 left right*/
+    border-radius: 10px;
+    font-size: 0.8em; /*multiplica por 0.8 la fuente con respecto al tamaño del wrapper*/
+}
+
+.pokemon .info .name {
+    margin: 15px 0 7px;
+    letter-spacing: 1px;
+}
